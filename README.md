@@ -25,3 +25,8 @@ apiToken.json
     "apiToken": "1234567890" // 这里填你的osu apitoken
 }
 ```
+### command
+```javascript
+!mappoolrow beatmapId +Mods // !mappoolrow 123456 +DT
+!calpp beatmapId +Mods Acc% ComboX MissM // !calpp 123456 +HRDT 95.98% 859x 2m
+```
