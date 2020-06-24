@@ -8,6 +8,6 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 rl.on("line", async (line) => {
-    let output = await new Command(line.toLowerCase()).apply();
+    let output = await new Command(line).apply();
     console.log(output);
 });

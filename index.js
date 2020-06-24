@@ -12,7 +12,7 @@ module.exports.apply = (ctx) => {
             let message = meta.message;
             if (!message.length || message.length < 5) return next();
             if (message.substring(0, 1) !== "!" && message.substring(0, 1) !== "！") return next();
-            let reply = await new Command(message.substring(1).toLowerCase()).apply();
+            let reply = await new Command(message.substring(1)).apply();
             if (reply !== "") return meta.$send(`[CQ:at,qq=${meta.userId}]` + "\n" + reply);
             return next();
         } catch (ex) {
